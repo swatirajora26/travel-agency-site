@@ -4,8 +4,26 @@
   @mixin atSmall{
   padding: 4.5rem 0;
 }
+
 &--blue{
   background-color:$Vblue;
   color:#FFF;
+}
+
+&--testimonials{
+  background-color: #e0e6ef;
+
+  @mixin atSmall{
+  background:url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+  background-size:cover;
+}
+}
+
+&--no-b-padding-untill-small{
+  padding-bottom:0;
+
+  @mixin atSmall{
+    padding-bottom:4.5rem;
+  }
 }
 }

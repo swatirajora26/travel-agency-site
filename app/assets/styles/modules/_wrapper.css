@@ -16,6 +16,16 @@
     @mixin atSmall{
     margin-bottom:3.874rem;
   }
+
+  &--no-padding-untill-medium{
+    padding-left:0;
+    padding-right:0;
+
+    @mixin atSmall{
+      padding-left:18px;
+      padding-right:18px;  
+    }
+  }
 }
 
   .wrapper{
